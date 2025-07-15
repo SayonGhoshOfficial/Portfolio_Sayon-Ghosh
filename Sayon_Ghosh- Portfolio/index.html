@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Portfolio of Sayon Ghosh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white bg-opacity-10 backdrop-blur-md fixed w-full z-10 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">SAYON GHOSH</h1>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+        <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="pt-24 min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-xl p-6 max-w-xl w-full">
+      <img src="images/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+      <h1 class="text-4xl font-bold mb-2">Hi, I'm Sayon Ghosh</h1>
+      <p class="text-lg mb-2">Computer Science Undergraduate | Future Web Developer</p>
+      <p class="italic text-gray-200 mb-4">
+               "I'm not just building websites — I'm building myself."<br>
+               "Transforming imagination into interactive reality."
+      </p>
+      <a href="#" class="bg-yellow-400 text-black px-6 py-2 rounded hover:bg-yellow-500 transition">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4">
+    <div class="container mx-auto">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg p-6">
+        <h2 class="text-3xl font-bold mb-6 text-center text-yellow-300">About Me</h2>
+        <p class="mb-4 text-center max-w-2xl mx-auto">
+          I'm Sayon Ghosh, a passionate learner diving deep into web development. I love clean design, intuitive UX, and bringing ideas to life with code.
+        </p>
+        <div class="grid md:grid-cols-2 gap-6 mt-8">
+          <div>
+            <h3 class="font-semibold mb-2 text-yellow-300">Skills</h3>
+            <ul class="list-disc pl-6 text-sm">
+              <li>HTML</li>
+              <li>CSS / Tailwind CSS</li>
+              <li>JavaScript (Basic)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2 text-yellow-300">Education</h3>
+            <ul class="list-disc pl-6 text-sm">
+              <li>10th - Bhandardihi P.B. Vidyamandir (WBBSE, WB)</li>
+            <li>12th - Kurhmun High School (WBCHSE, WB)</li>
+            <li>B.Tech CSE - Narula Institute of Technology (MAKAUT, WB)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4">
+    <div class="container mx-auto">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg p-6">
+        <h2 class="text-3xl font-bold mb-6 text-center text-yellow-300">Projects</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- Project Cards -->
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg shadow-md hover:scale-105 transition duration-500">
+            <img src="images/project1.png" alt="Project 1" class="mb-3 rounded">
+            <h3 class="font-semibold text-lg text-yellow-300">Portfolio Website</h3>
+            <p class="text-sm text-gray-100">A personal portfolio website built using HTML & Tailwind CSS.</p>
+          </div>
+
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg shadow-md hover:scale-105 transition duration-500">
+            <img src="images/project2.png" alt="Project 2" class="mb-3 rounded">
+            <h3 class="font-semibold text-lg text-yellow-300">Calculator App</h3>
+            <p class="text-sm text-gray-100">Basic calculator using HTML, CSS & JavaScript.</p>
+          </div>
+
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg shadow-md hover:scale-105 transition duration-500">
+            <img src="images/project3.png" alt="Project 3" class="mb-3 rounded">
+            <h3 class="font-semibold text-lg text-yellow-300">Image Gallery</h3>
+            <p class="text-sm text-gray-100">Responsive gallery layout built using HTML & CSS.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4">
+    <div class="container mx-auto max-w-xl">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg p-6">
+        <h2 class="text-3xl font-bold mb-6 text-center text-yellow-300">Contact Me</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white/20" required>
+          <input type="email" placeholder="Email" class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white/20" required>
+          <textarea rows="4" placeholder="Message" class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white/20" required></textarea>
+          <button type="submit" class="bg-yellow-400 text-black px-6 py-2 rounded hover:bg-yellow-500 transition">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-200 bg-opacity-10">
+    © 2025 Sayon Ghosh. All rights reserved.
+  </footer>
+
+</body>
+</html>
